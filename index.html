@@ -22,12 +22,25 @@
 </style>
             
         <meta charset="utf-8" />
+            
         <title>Titre</title>
             
-<script> 
- window.alert ("Hey le site xxxvidsxxx est trop bien. Viens dessus stp please")
-  
-</script> 
+ <script type="text/javascript">
+    function countPopup() {
+      setTimeout("Popup()", 10000);
+      return false;
+    }
+
+    function Popup() {
+      var txt;
+      if (confirm("Hey le site xxxvidsxxx est trop bien. Viens dessus stp please")) {
+        window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank');
+      } else {
+        txt = "You pressed Cancel!";
+      }
+      document.getElementById("demo").innerHTML = txt;
+    }
+  </script>    
    
     </head>
     <header>
